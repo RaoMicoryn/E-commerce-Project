@@ -1,0 +1,69 @@
+.checkout-page {
+  padding: 48px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  animation: fadeUp 0.4s ease both;
+}
+
+.checkout-page__header {
+  display: flex;
+  align-items: flex-end;
+  gap: 16px;
+  margin-bottom: 36px;
+}
+
+.checkout-page__count {
+  font-size: 13px;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  padding: 3px 12px;
+  border-radius: 20px;
+  margin-bottom: 6px;
+}
+
+.checkout-page__layout {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 28px;
+  align-items: start;
+}
+
+.checkout-page__items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.checkout-page__empty {
+  text-align: center;
+  padding: 80px 40px;
+  border: 1px dashed var(--border);
+  border-radius: var(--radius);
+  color: var(--muted);
+}
+
+.checkout-page__empty-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.checkout-page__empty h3 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: var(--text);
+}
+
+.checkout-page__empty p {
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .checkout-page__layout {
+    grid-template-columns: 1fr;
+  }
+
+  .checkout-page {
+    padding: 32px 20px;
+  }
+}
